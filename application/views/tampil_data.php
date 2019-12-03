@@ -28,6 +28,7 @@
 	<table id="example1" class="table table-bordered table-striped">
 		<thead>
 	<tr>
+
 		<th>ID</th>
 		<th>Nim</th>
 		<th>Nama</th>
@@ -39,11 +40,11 @@
 		<th>Hapus</th>
 		</tr>
 	</thead>
-		<?php
+		<?php $id = 1;
 		foreach ($isi as $k0 => $v0) {
 		?>
 		<tr>
-			<td><?php echo $v0['id'] ?></td>
+			<td><?php echo $id++; ?></td>
 			<td><?php echo $v0['nim'] ?></td>
 			<td><?php echo $v0['nama_mahasiswa'] ?></td>
 			<td><?php echo $v0['prodi'] ?></td>

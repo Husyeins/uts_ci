@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12 Nov 2019 pada 01.41
+-- Generation Time: 03 Des 2019 pada 06.36
 -- Versi Server: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -43,7 +43,17 @@ CREATE TABLE `data_mhs` (
 --
 
 INSERT INTO `data_mhs` (`id`, `nim`, `nama_mahasiswa`, `prodi`, `jk`, `alamat`, `hp`) VALUES
-(3, '161240000578', 'muhammad sadam husyein awami syahrul akbar', 'TIF', 'Laki-Laki', 'bangsri', '081244774500');
+(3, '161240000578', 'muhammad sadam husyein awami syahrul akbar', 'TIF', 'Laki-Laki', 'bangsri', '081244774500'),
+(4, '161240000579', 'AFNAN ISTIKMAL', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'BANGSRI RW.5 RT.1', '085225212213'),
+(5, '161240000587', 'NUR AHMAD MUTANNASIK', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'MAYONG RW.1 RT.11', '085740337342'),
+(6, '161240000583', 'HENI MUNDJAYATI', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'MURIA LOBO RT.2 RW.7 NALUMSARI', '082221509054'),
+(7, '161240000490', 'RIZKY EFENDI', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'NGELING RT.2 RW.3 PECANGAAN JEPARA', '085855332937'),
+(8, '161240000495', 'MUHAMMAD ABDUL AZIZ', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'SINANGGUL RT.6 RW.1', '08778006200'),
+(9, '161240000910', 'DEWI AFIFAH', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'SIGEBUK RT.12 RW.2', '089530444248'),
+(10, '161240000541', 'IRVANDI MAULANA', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'SEKURO RT.3 RW.7 KEC.MLONGGO', '081223444234'),
+(11, '161240000491', 'INI SEBAGAI CONTOH', 'TEKNIK INFORMATIKA', 'Perempuan', 'Bangsri', '081215805333'),
+(12, '161240000579', 'M SAKTI ABABIL', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'BAPANGAN RT.2 RW.3', '081221345232'),
+(13, '161240000584', 'AZAR SALIM', 'TEKNIK INFORMATIKA', 'Laki-Laki', 'PAMATAN', '08898861334');
 
 --
 -- Trigger `data_mhs`
@@ -93,7 +103,8 @@ CREATE TABLE `tbl_ubah_hp` (
 --
 
 INSERT INTO `tbl_ubah_hp` (`id`, `nim`, `hp_lama`, `hp_baru`, `tgl_ubah`) VALUES
-(2, '161240000578', '089530444248', '081244774500', '2019-11-11 23:43:17');
+(2, '161240000578', '089530444248', '081244774500', '2019-11-11 23:43:17'),
+(3, '161240000579', '085225212212', '085225212213', '2019-12-03 12:20:26');
 
 -- --------------------------------------------------------
 
@@ -128,13 +139,13 @@ ALTER TABLE `tbl_ubah_hp`
 -- AUTO_INCREMENT for table `data_mhs`
 --
 ALTER TABLE `data_mhs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `tbl_ubah_hp`
 --
 ALTER TABLE `tbl_ubah_hp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
